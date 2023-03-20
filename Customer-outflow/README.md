@@ -12,9 +12,9 @@ You are presented with historical data on the behavior of customers and the term
 
 # The purpose of the study
 
-Нужно спрогнозировать, уйдёт клиент из банка в ближайшее время или нет. Постройте модель с предельно большим значением F1-меры. Чтобы сдать проект успешно, нужно довести метрику до 0.59. Проверьте F1-меру на тестовой выборке самостоятельно.
+It is necessary to predict whether the client will leave the bank in the near future or not. Build a model with an extremely large value of the F1-measure. To pass the project successfully, you need to bring the metric to 0.59. Check the F1 measure on the test sample yourself.
 
-Дополнительно измеряйте AUC-ROC, сравнивайте её значение с F1-мерой.
+Additionally, measure the AUC-ROC, compare its value with the F1-measure.
 
 # Data description 
 
