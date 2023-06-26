@@ -1,15 +1,15 @@
 # DS_Course_Portfolio
 
-A repository for projects created during the study of machine learning and data science.
+Репозторий для проектов выполненных во время обучения на курсе Data Science. 
 
-# Project descriptions
+# Описание проектов
 
-| Project name | Description | Skills and libraries | 
+| Название проекта | Описание | Навыки и инструменты | 
 | :---------------------- | :---------------------- | :---------------------- |
-|[Investigation of the reliability of borrowers](Investigation-of-the-reliability-of-borrowers) | It is necessary to understand whether the marital status and the number of children of the client affect the fact of repayment of the loan on time. Input data from the bank — statistics on the solvency of customers.| *pandas*, *data preprocessing*, *lemmatization* |
-|[Real estate market Research](Real-estate-market-Research) | It is necessary to determine the parameters that affect the value of real estate according to the ads for the sale of apartments in St. Petersburg and the region | *pandas*, *Matplotlib*, *correlation detection*, *plotting* |
-|[Research of data on the Russian film distribution](Research-of-data-on-the-Russian-film-distribution) | The customer of this study is the Ministry of Culture of the Russian Federation. You need to study the Russian film distribution market and identify current trends. Pay attention to the films that have received state support. Try to answer the question of how interesting such films are to the viewer. You will work with the data published on the open data portal of the Ministry of Culture. The data set contains information about rental certificates, fees and state support for films, as well as information from the KinoPoisk website. | *pandas*, *Matplotlib*, *correlation detection*, *plotting* |
-|[Recommendation of tariffs](Recommendation-of-tariffs) | You have at your disposal data on the behavior of customers who have already switched to these tariffs (from the course project "Statistical Data Analysis"). You need to build a model for the classification problem that will choose the appropriate tariff. | *Pandas, sklearn* |
-|[Customer outflow](Customer-outflow) |It is necessary to predict whether the client will leave the bank in the near future or not. You are presented with historical data on the behavior of customers and the termination of contracts with the bank.  | *Pandas, sklearn, matplotlib* |
-|[Choosing the location for the well](Choosing-the-location-for-the-well) |You have been provided with oil samples in three regions. The characteristics for each well in the region are already known. Build a model to determine the region where mining will bring the greatest profit. Analyze the possible profits and risks with the Bootstrap technique.| *Pandas, sklearn, matplotlib, NumPy, pandas_profiling, various classification models, parameter selection, bootstrap.* |
+|[Исследование данных сервиса “Яндекс.Музыка” — сравнение пользователей двух городов](Исследование данных сервиса “Яндекс.Музыка” — сравнение пользователей двух городов) | На реальных данных Яндекс.Музыки c помощью библиотеки Pandas и её возможностей проверить данные и сравнить поведение и предпочтения пользователей двух столиц — Москвы и Санкт-Петербурга.| *pandas*, *Python*, обработка данных, дубликаты, пропуски, логическая индексация, группировка, сортировка |
+|[Продажа квартир в Санкт-Петербурге — анализ рынка недвижимости](Продажа квартир в Санкт-Петербурге — анализ рынка недвижимости) | Используя данные сервиса Яндекс.Недвижимость, определить рыночную стоимость объектов недвижимости и типичные параметры квартир |Python, Pandas, Matplotlib, исследовательский анализ данных, визуализация данных, предобработка данных |
+|[Исследование рынка российского кинопроката](Исследование рынка российского кинопроката) | Выполнить исследование рынка российского кинопроката | *pandas*, *Matplotlib*|
+|[Классификаиция клиентов телеком компании](Классификаиция клиентов телеком компании) | На основе данных предложить клиенту тариф. | *Pandas, Matplotlib, sklearn* |
+|[Прогнозирование оттока клиента Банка](Прогнозирование оттока клиента Банка) |На основе данных из банка определить клиент, который может уйти  | *Pandas, sklearn, matplotlib* |
+|[Определение наиболее выгодного региона нефтедобычи](Определение наиболее выгодного региона нефтедобычи) |На основе данных геологи разведки выбрать район добычи нефти| *Pandas, sklearn, matplotlib, NumPy, pandas_profiling, various classification models, parameter selection, bootstrap.* |
 
