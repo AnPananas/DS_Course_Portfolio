@@ -1,20 +1,19 @@
-# Skills and libraries:
+# Навыки и библиотеки:
 
 Pandas, NumPy, Matplotlib, correlation detection, plotting
 
-# Project Description
+# Описание проекта
 
-The customer of this study is the Ministry of Culture of the Russian Federation.
-You need to study the Russian film distribution market and identify current trends. Pay attention to the films that have received state support. Try to answer the question of how interesting such films are to the viewer.
-You will work with the data published on the [open data portal of the Ministry of Culture](https://opendata.mkrf.ru/). The data set contains information about rental certificates, fees and state support for films, as well as information from the KinoPoisk website.
+Изучить рынок российского кинопроката и выявить текущие тренды. Сделать аналих насколько  фильмы, которые получили государственную поддержку, интересны зрителю.
+Источник [портал открытых данных Министерства культуры](https://opendata.mkrf.ru/). 
 
-# The purpose of the study
+# Цель исследования
 
-It is necessary to study the Russian film distribution market and identify current trends. Pay attention to films that have received state support. Find out how interesting such films are to the viewer.
+Выполнить исследование рынка российского кинопроката
 
 # Data description 
 
-The mkrf_movies table contains information from the register of rental certificates. One film can have several rental certificates.
+Таблица mkrf_movies содержит информацию из реестра прокатных удостоверений. У одного фильма может быть несколько прокатных удостоверений.
 
 - title — the name of the film;
 - puNumber — the number of the rental certificate;
@@ -32,33 +31,49 @@ The mkrf_movies table contains information from the register of rental certifica
 - ratings — rating of the film on KINOPOISK;
 - genres — the genre of the film.
 
-Note that the budget column already includes the full amount of government support. The data in this column is only for those films that have received state support.
-The mkrf_shows table contains information about movie screenings in Russian cinemas.
+- title — название фильма;
+- puNumber — номер свидетельства об аренде;
+- show_start_date — дата премьеры фильма;
+- type — тип фильма;
+- film_studio — студия-продюсер;
+- production_country — страна происхождения;
+- director — постановщик;
+- producer — продюссер;
+- age_restriction — возрастная категория;
+- refundable_support — сумма подлежащих возврату средств государственной поддержки;
+- nonrefundable_support — сумма невозвращаемых средств государственной поддержки;
+- financing_source — источник государственного финансирования;
+- budget — общий бюджет фильма;
+- ratings — рейтинг фильма на КИНОПОИСКЕ;
+- genres — жанр фильма.
 
-- puNumber — number of the rental certificate;
-- box_office — fees in rubles.
+Обратите внимание, что в графе "бюджет" уже указана полная сумма государственной поддержки. Данные в этой колонке относятся только к тем фильмам, которые получили государственную поддержку.
+Таблица mkrf_shows содержит информацию о показах фильмов в российских кинотеатрах.
 
-# General conclusion
+- puNumber — номер свидетельства об аренде;
+- box_office — сборы в рублях.
+
+# Вывод
 
 
-For world cinema :
+Для мирового кинематографа :
 
-49,622,695,308.8 - Maximum fees
+49,622,695,308.8 - Максимальные сборы
 
-2,425,499.0 - Minimum fees
+2,425,499.0 - Минимальные сборы
 
-by fees, the most popular category is "16+"
+по сборам самая популярная категория - "16+"
 
-The most profitable year would be 2017
+Самым прибыльным годом был бы 2017-й
 
-For Russian cinema:
+Для российского кино:
 
-It is difficult to talk about trends specifically for films with state support, since the sample is only 300 films.
+Сложно говорить о тенденциях конкретно для фильмов с государственной поддержкой, поскольку выборка составляет всего 300 фильмов.
 
-state support:
+государственная поддержка:
 
-The largest number of films with state support is up to 100 million rubles.
+Наибольшее количество фильмов с государственной поддержкой - до 100 миллионов рублей.
 
-The minimum support is 3 million, and the maximum is 500 million
+Минимальная поддержка составляет 3 миллиона, а максимальная - 500 миллионов
 
-Most often there is state support in the amount of 35 million
+Чаще всего речь идет о государственной поддержке в размере 35 миллионов долларов
