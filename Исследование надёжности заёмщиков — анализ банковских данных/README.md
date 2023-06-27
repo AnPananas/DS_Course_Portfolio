@@ -1,21 +1,53 @@
+# Навыки и библиотеки
+предобработка данных, Python, Pandas
+# Описание проекта
 
-# Project Description
+На основе данных кредитного отдела банка исследовал влияние семейного положения и
+количества детей на факт погашения кредита в срок. Была получена информация о
+данных. Определены и обработаны пропуски. Заменены типы данных на соответствующие
+хранящимся данным. Удалены дубликаты. Категоризованы данные. Один датафрейм декомпозирован на три.
 
-The customer is the credit department of the bank. It is necessary to understand whether the marital status and the number of children of the client affect the fact of repayment of the loan on time. Input data from the bank — statistics on the solvency of customers.
+# Цель исследования
 
-The results of the study will be taken into account when building a credit scoring model — a special system that evaluates the ability of a potential borrower to repay a loan to a bank.
+На основе статистики о платёжеспособности клиентов исследовать влияет ли семейное положение и количество детей клиента на факт возврата кредита в срок
 
-# Description of the data
+# Описание данных
 
-- children — the number of children in the family
-- days_employed — total work experience in days
-- dob_years — client's age in years
-- education — client's education level
-- education_id — education level identifier
-- family_status — marital status
-- family_status_id — id of marital status
-- gender — gender of the client
-- income_type — type of employment
-- debt — whether there was a debt on repayment of loans
-- total_income — monthly income
-- purpose — the purpose of obtaining a loan
+- children — количество детей в семье
+- days_employed — общий стаж работы в днях
+- dob_years — возраст клиента в годах
+- education — уровень образования клиента
+- education_id — идентификатор уровня образования
+- family_status — семейное положение
+- family_status_id — идентификатор семейного положения
+- gender — пол клиента
+- income_type — тип занятости
+- debt — была ли задолженность по погашению кредитов
+- total_income — ежемесячный доход
+- purpose — цель получения кредита
+
+  
+# Вывод
+
+Есть определенная взаимосвязь между семейным положением, уровнем дохода, количеством детей, целью кредита и возвратом денег в срок.
+
+Наибольшее влияние на поздний срок оплаты долга влияют: количество детей и цель. В меньшей мере семейное положение и на последнем месте уровень дохода.
+
+Самые рискованные категории клиентов:
+
+с целью покупки авто - 9,35% процент должников в данной категории.
+Клиенты с уровнем дохода E - 9,09% процент должников в данной категории.
+Категория Не женат / не замужем - 9,76% процент должников в данной категории.
+-Наибольшие риски для категории с количеством детей ** 4** - 9,75% процент должников в данной категории.
+
+Самые надежные категории клиентов:
+
+На покупку недвижимости - 7,25% процент должников в данной категории.
+
+Категория доходности "D" - 6,02% процент должников в данной категории.
+
+вдовец / вдова - 6,62% процент должников в данной категории.
+
+Бездетные - 7,54% процент должников в данной категории.
+
+Наиболее репрезентативен анализ по целям, так как в этих выборках процент содержания в общем числе клиентов распределен более-менее сопоставимо. Остальные варианты сложно считать достоверными из-за малого присутствия в выборке.
