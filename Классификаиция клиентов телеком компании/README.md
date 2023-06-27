@@ -5,31 +5,30 @@ Pandas, sklearn
 
 # Описание проекта
 
-The mobile operator Megaline found out that many customers use archive tariffs. They want to build a system capable of analyzing customer behavior and offering users a new tariff: "Smart" or "Ultra".
-You have at your disposal data on the behavior of customers who have already switched to these tariffs (from the course project "Statistical Data Analysis"). You need to build a model for the classification problem that will choose the appropriate tariff. You won't need data preprocessing — you've already done it.
-Build a model with the maximum accuracy value. To pass the project successfully, you need to bring the proportion of correct answers to at least 0.75. Check accuracy on the test sample yourself.
+Оператор мобильной связи выяснил: многие клиенты пользуются архивными тарифами. Они хотят построить систему, способную проанализировать поведение клиентов и предложить пользователям один из новых тариф.
 
 # Цель исследования
 
-Build a model with the maximum accuracy value. To pass the project successfully, you need to bring the proportion of correct answers to at least 0.75. Check accuracy on a test sample
+На основе данных предложить клиенту тариф.
 
 # Описание данных 
 
-Each object in the dataset is information about the behavior of one user per month. Is known:
+ Каждый объект в наборе данных представляет собой информацию о поведении одного пользователя в месяц. Известно:
 
-- calls — number of calls,
-- minutes — total duration of calls in minutes,
-- messages — the number of SMS messages,
-- mb_used — consumed Internet traffic in MB,
-- is_ultra — what tariff was used during the month ("Ultra" — 1, "Smart" — 0).
+- calls — количество звонков,
+- minutes — общая продолжительность звонков в минутах,
+- messages —  количество SMS-сообщений,
+- mb_used —  потребленный интернет-трафик в МБ,
+- is_ultra — какой тариф использовался в течение месяца ("Ultra" — 1, "Smart" — 0).
+
+ 
 
 # Вывод
 
+Для решения этой задачи подходят две модели:
 
-Two models are suitable for this task:
+Дерево решений
+Случайный лес
+Логистическая регрессия показала значение точности менее 0,75
 
-Decision Tree
-Random Forest
-Logistic regression showed accuracy value less than 0.75
-
-Accuracy of the test sample for the random forest model is 0.796. The adequacy test is passed, We select the "random forest" model
+Точность тестовой выборки для модели случайного леса составляет 0,796. Тест на адекватность пройден, мы выбираем модель "случайного леса"
