@@ -1,25 +1,27 @@
-# Skills and libraries:
+# Навыки и библиотеки:
 
 Pandas, sklearn, matplotlib, NumPy, pandas_profiling, various classification models, parameter selection, bootstrap.
 
-# Project Description
+# Описание проекта
 
-You have been provided with oil samples in three regions. The characteristics for each well in the region are already known. Build a model to determine the region where mining will bring the greatest profit. Analyze the possible profits and risks with the Bootstrap technique.
-
-
-# The purpose of the study
-
-Build a machine learning model that will help determine the region where mining will bring the greatest profit. Analyze the possible profits and risks with the Bootstrap technique.
+Предоставлены пробы нефти в трёх регионах. Характеристики для каждой скважины в регионе уже известны. Необходимо построить модель для определения региона, где добыча принесёт наибольшую прибыль. 
 
 
-# Data description 
+# Цель исследования
 
-- id — unique well ID;
-- f0, f1, f2 — three signs of dots (it doesn't matter what they mean, but the signs themselves are significant);
-- product — the volume of reserves in the well (thousand barrels).
 
-# General conclusion
+На основе данных геологи разведки выбрать район добычи нефти
 
-The distribution of profits for each region, the risk of losses and the average profit are found. According to these characteristics, the region for the development of wells was selected.
-Non-unique wells were found in the data, as well as a correlation of the f2 trait in one of the regions. This requires clarification to increase the accuracy of the study.
-Testing of other regression models showed different results.
+
+# Описание данных 
+
+- id — уникальный идентификатор скважины;
+- f0, f1, f2 — три знака точек (не имеет значения, что они означают, но сами знаки имеют значение);
+- product — объем запасов в скважине (тыс. баррелей).
+
+
+# Вывод
+
+Найдено распределение прибыли по каждому региону, риск потерь и средняя прибыль. В соответствии с этими характеристиками был выбран регион для разработки скважин.
+В данных были обнаружены неуникальные скважины, а также корреляция признака f2 в одном из регионов. Это требует уточнения для повышения точности исследования.
+Тестирование других регрессионных моделей показало иные результаты.
