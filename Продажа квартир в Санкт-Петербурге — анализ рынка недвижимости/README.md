@@ -1,67 +1,70 @@
-# Skills and libraries:
+# Навыки и библиотеки:
 
 Pandas, Matplotlib, correlation detection, plotting
 
-# Project Description
+# Описание проекта
 
-At your disposal are the data of the Yandex Real Estate service — an archive of ads for several years about the sale of apartments in St. Petersburg and neighboring settlements.
-Your task is to perform data preprocessing and study them to find interesting features and dependencies that exist in the real estate market.
-The database contains two types of data about each apartment: user-added and cartographic. For example, the first type includes the area of the apartment, its floor and the number of balconies, the second — the distance to the city center, the airport and the nearest park.
+На основе данных сервиса Яндекс.Недвижимость определена рыночная стоимость
+объектов недвижимости разного типа, типичные параметры квартир, в зависимости от
+удаленности от центра. Проведена предобработка данных. Добавлены новые данные.
+Построены гистограммы, боксплоты, диаграммы рассеивания.
 
-# The purpose of the study
+# Цель исследования
 
-According to the ads for the sale of apartments in St. Petersburg and the region, determine the parameters that affect the value of real estate.
+Используя данные сервиса, определить рыночную стоимость объектов недвижимости и типичные параметры квартир
 
-# Data description 
+# Описание данных 
 
-- airports_nearest — distance to the nearest airport in meters (m)
-- balcony — number of balconies
-- ceiling_height — ceiling height (m)
-- cityCenters_nearest — distance to the city center (m)
-- days_exposition — how many days the ad was placed (from publication to removal)
-- first_day_exposition — date of publication
-- floor — floor
-- floors_total — total floors in the house
-- is_apartment — apartments (boolean type)
-- kitchen_area — kitchen area in square meters (m2)
-- last_price — price at the time of withdrawal from publication
-- living_area — living area in square meters (m2)
-- locality_name — name of the locality
-- open_plan — free layout (boolean type)
-- parks_around3000 — number of parks within a radius of 3 km
-- parks_nearest — distance to the nearest park (m)
-- ponds_around3000 — number of reservoirs within a radius of 3 km
-- ponds_nearest — distance to the nearest reservoir (m)
-- rooms — number of rooms
-- studio — studio apartment (Boolean type)
-- total_area — the total area of the apartment in square meters (m2)
-- total_images — the number of photos of the apartment in the ad
-
-# General conclusion
+- airports_nearest — расстояние до ближайшего аэропорта в метрах (м)
+- балкон — количество балконов
+- ceiling_height — высота потолка (м)
+- cityCenters_nearest — расстояние до центра города (м)
+- days_exposition — сколько дней было размещено объявление (от публикации до удаления)
+- first_day_exposition — дата публикации
+- floor — этаж
+- floors_total — общее количество этажей в доме
+- is_apartment — апартаменты (логический тип)
+- kitchen_area — площадь кухни в квадратных метрах (м2)
+- last_price — цена на момент отзыва из публикации
+- living_area — жилая площадь в квадратных метрах (м2)
+- locality_name — название населенного пункта
+- open_plan — свободный макет (логический тип)
+- parks_around3000 — количество парков в радиусе 3 км
+- parks_nearest — расстояние до ближайшего парка (м)
+- ponds_around3000 — количество водоемов в радиусе 3 км
+- ponds_nearest — расстояние до ближайшего водоема (м)
+- rooms — количество комнат
+- studio — квартира-студия (логический тип)
+- total_area — общая площадь квартиры в квадратных метрах (м2)
+- total_images — количество фотографий квартиры в объявлении
 
 
-The peak of the submission of ads falls on February, the lowest number of ads in May.
 
-On weekends, ads are published twice as often as on weekdays.
+# Вывод
 
-The average time an ad is on the site is 183.5 days.
 
-The most common ad placement time is 96 days.
+Пик подачи объявлений приходится на февраль, наименьшее количество объявлений приходится на май.
 
-For the time of sale, values that range from 0 to 520 days can be considered normal. Most of the ads are closed after 43-234 days.
+По выходным объявления публикуются в два раза чаще, чем в будние дни.
 
-The largest correlation between the distance from the center of St. Petersburg and the price of the apartment corr = -0.8.
+Среднее время нахождения объявления на сайте составляет 183,5 дня.
 
-The cost of the premises strongly depends on the total area and living area corr = 0.6.
+Наиболее распространенный срок размещения рекламы составляет 96 дней.
 
-A strong influence, but slightly less has the kitchen area corr = 0.5.
+На момент продажи значения, которые варьируются от 0 до 520 дней, можно считать нормальными. Большинство объявлений закрываются через 43-234 дня.
 
-Even less affected is the number of rooms corr = 0.4.
+Наибольшая корреляция между удаленностью от центра Санкт-Петербурга и ценой квартиры corr = -0,8.
 
-A weak inverse correlation is given by the distribution over the years of corr = -0.1.
+Стоимость помещения сильно зависит от общей площади и жилой площади corr = 0,6.
 
-The price is also affected by the category of floors (first, last, other)
+Сильное влияние, но несколько меньшее, оказывает площадь кухни corr = 0,5.
 
-The most expensive square meter:103,995.5 p. Located in St. Petersburg
+Еще меньше пострадало количество комнат corr = 0,4.
 
-The cheapest square meter:69,583.5 p. Located in Lomonoso
+Слабую обратную корреляцию дает распределение по годам corr = -0,1.
+
+На цену также влияет категория этажей (первый, последний, другой).
+
+Самый дорогой квадратный метр:103 995,5 р. Расположен в Санкт-Петербурге
+
+Самый дешевый квадратный метр:69 583,5 р. Расположен в Ломоносово
