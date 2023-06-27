@@ -1,46 +1,44 @@
 
-# Skills and libraries:
+# Навяки и библиотеки:
 
 Pandas, sklearn, matplotlib
 
-# Project Description
+# Описание проекта
 
-Customers began to leave Beta Bank. Every month. A little, but noticeable. Bank marketers have found that it is cheaper to retain current customers than to attract new ones.
-You are presented with historical data on the behavior of customers and the termination of contracts with the bank.
+Из банка стали уходить клиенты. Каждый месяц. Немного, но заметно. Банковские маркетологи посчитали: сохранять текущих клиентов дешевле, чем привлекать новых.
+Нужно спрогнозировать, уйдёт клиент из банка в ближайшее время или нет. Предоставлены исторические данные о поведении клиентов и расторжении договоров с банком.
 
 Источник данных: (https://www.kaggle.com/barelydedicated/bank-customer-churn-modeling)
 
-# The purpose of the study
+# Цель исследования
 
-It is necessary to predict whether the client will leave the bank in the near future or not. Build a model with an extremely large value of the F1-measure. To pass the project successfully, you need to bring the metric to 0.59. Check the F1 measure on the test sample yourself.
+На основе данных из банка определить клиент, который может уйти
 
-Additionally, measure the AUC-ROC, compare its value with the F1-measure.
+# Описание данных
 
-# Data description 
+Признаки
+- RowNumber — индекс строки в данных
+- CustomerID — уникальный идентификатор клиента
+- Surname — фамилия
+- CreditScore — кредитный рейтинг
+- Geography — страна проживания
+- Gender — пол
+- Age — возраст
+- Tenure — сколько лет человек является клиентом банка
+- Balance — остаток на счете
+- NumOfProducts — количество банковских продуктов, используемых клиентом
+- HasCrCard — наличие кредитной карты
+- IsActiveMember — активность клиента
+- EstimatedSalary — предполагаемая заработная плата
 
-Signs
-- RowNumber — index of the row in the data
-- CustomerID — unique identifier of the customer
-- Surname — surname
-- CreditScore — credit rating
-- Geography — country of residence
-- Gender — gender
-- Age — age
-- Tenure — how many years has a person been a customer of the bank
-- Balance — account balance
-- NumOfProducts — the number of bank products used by the customer
-- HasCrCard — availability of a credit card
-- IsActiveMember — client activity
-- EstimatedSalary — estimated salary
-
-Target attribute
-- Exited — the fact of the client's departure
-
-# General conclusion
+Целевой признак
+- Exited — факт ухода клиента
+- 
+# Вывод
 
 
-During the study, data were prepared and three models were tested: Logistic Regression, Random Forest and Decision Tree. The studies were conducted for unbalanced and balanced samples, then the best model was selected, on which control testing was done. Additionally, the auc_roc metric was introduced, which shows the ratio of completeness and accuracy of the model.
+В ходе исследования были подготовлены данные и протестированы три модели: Логистическая регрессия, Случайный лес и Дерево решений. Исследования проводились на несбалансированных и сбалансированных образцах, затем была выбрана наилучшая модель, на которой было проведено контрольное тестирование. Кроме того, была введена метрика auc_roc, которая показывает соотношение полноты и точности модели.
 
-The best indicator after balancing classes was shown by a random forest model with the value of F1-measure = 0.6, the value of AUC-ROC =0.74
+Наилучший показатель после балансировки классов показала модель случайного леса со значением F1-меры = 0,6, значением AUC-ROC =0,74
 
-F1-the measure is greater than 0.59 - the task is completed.
+F1 - показатель больше 0,59 - задача выполнена.
